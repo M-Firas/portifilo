@@ -16,7 +16,7 @@ export const Landing = () => {
   return (
     <div className='landing' id='home'>
       <div className='overlay'></div>
-        <video src={Video} autoPlay loop ></video>
+        <video src={Video} autoPlay loop={true} muted playsInline ></video>
 
         <div className='content'>
         <h1>Welcome.</h1>
