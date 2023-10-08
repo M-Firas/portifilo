@@ -57,7 +57,7 @@ export const Contact = () => {
          
           <div className='contact--media'>
           <div className='contact--item'>
-           <img src={discord} alt="" />
+           <a href="https://discordapp.com/users/721801605187371040" target='blank'><img src={discord} alt="" /></a>
            </div>
 
            <div className='contact--item'>
