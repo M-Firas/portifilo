@@ -1,0 +1,159 @@
+.contact{
+    padding:  50px 50px 100px 50px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contact .container{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    border-radius: 30px;
+    padding: 50px 100px;
+}
+.contact--right , .contact--left {
+    padding:50px 50px 100px 50px;
+    height: 500px;
+}
+.contact--left{
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+    background-color: var(--colorYellow);
+    
+}
+.contact--left h2{
+    text-align: center;
+    font-size: 30px;
+    color: rgb(0, 0, 0,.8);
+    font-weight: 300;
+}
+.contact--media{
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+    flex-direction: row;
+    margin-top: 75px;
+}
+.contact--item p{
+     text-align: center;
+     color: rgb(0, 0, 0,.8);
+     font-size: 20px;
+}
+.contact--item img{
+   width: 100px;
+   height: 100px;
+   transition: 0.3s all ease-in-out;
+}
+.contact--item img:hover{
+    transform: scale(1.1);
+}
+
+.contact--right{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--componentBackground);
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+}
+.contact--right h2{
+    text-align: center;
+    font-size: 30px;
+    color: var(--colorWhite);
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+.contact--right form{
+    display: flex;
+    flex-direction: column; 
+}
+.contact--right form label{
+    color: var(--colorWhite);
+    margin-bottom: 5px;
+    font-weight: 300;
+}
+.email , .name{
+    height: 30px;  
+    width: 300px;
+    margin-bottom: 20px; 
+    border-radius: 10px; 
+    border: 1px solid #1f2833;
+    background-color: #5c5c5c;
+    color: var(--colorWhite);
+    padding: 5px;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 18px;
+ }
+ .message{
+    height: 150px; 
+    width: 300px;
+    border-radius: 10px; 
+    border: 1px solid #1f2833;
+    margin-bottom: 20px;
+    background-color: #5c5c5c;
+    padding: 5px;
+    color: var(--colorWhite);
+    font-family: 'League Spartan', sans-serif;
+    font-size: 18px;
+}
+form button{
+    width: 150px;
+    padding:  20px ;
+    border-radius: 30px ;
+    background-color: var(--colorYellow);
+    border: none;
+    align-self: center;
+    color: rgb(0, 0, 0,.8);
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s all ease-in-out;
+}
+form button:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+.success{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 20px;
+    color: var(--colorWhite);
+    font-weight: 400;
+}
+
+@media only screen  and  (max-width:740px){
+    .contact .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+    .contact--left{
+        border-bottom-left-radius: 0px;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px; 
+        height: 270px;
+    }
+    .contact--media{
+        margin: 0;
+    }
+    .contact--right{
+        border-bottom-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+        border-top-right-radius: 0px;
+        padding: 50px 50px 130px 50px;
+    }
+    .contact--left,.contact--right{
+        width: 250px;
+    }
+}
+@media (max-width: 992px) {
+    .contact .container{
+        padding: 0;
+    }
+}

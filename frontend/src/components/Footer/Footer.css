@@ -1,0 +1,22 @@
+.footer{
+    width: 100%;
+    margin: 0 auto ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:var(--componentBackground);
+}
+.footer h1{
+  font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: var(--colorGray);
+    padding: 20px;
+}
+@media only screen  and  (max-width:600px){
+  .footer{
+    width: 100%;
+}
+}

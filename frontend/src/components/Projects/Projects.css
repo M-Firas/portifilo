@@ -1,0 +1,79 @@
+.projects{
+    padding:  50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.projects .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 80px;
+    padding: 50px 0px;
+}
+.grid--item {
+background-color: var(--componentBackground);
+box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    padding: 40px var(--componentPadding);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.grid--item img{
+    width: 300px;
+    height: 180px;
+    border-radius: 10px;
+}
+.grid--item h1{
+    margin-bottom: 10px;
+    color: var(--colorWhite);
+    font-weight: 400;
+}
+.grid--item p{
+    margin-top: 5px;
+    margin-bottom: 30px;
+    height: 50px;
+    color: var(--colorGray);
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+}
+.grid--item button{
+    padding:  20px 40px ;
+    border-radius: 30px ;
+    background-color: var(--colorYellow);
+    border: none;
+    color: rgb(0, 0, 0,.8);
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s all ease-in-out;
+}
+.grid--item button:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+@media only screen  and  (max-width:600px){
+    .projects .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 992px) and (min-width:600px){
+    .projects .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .grid--item {
+        width: 400px;
+        
+    }
+}

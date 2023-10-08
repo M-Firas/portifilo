@@ -1,0 +1,116 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    transition: .3s ease-in;
+    z-index: 1100;
+}
+.active{
+    background-color: var(--componentBackground);
+}
+nav{
+    padding: 0px 20px;
+}
+.header h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    color: var(--colorWhite);
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+.header h2 img{
+    margin-right: 10px;
+}
+.header h2 > span{
+    color: var(--colorYellow);
+}
+.nav--links{
+   list-style: none;
+}
+.nav--links li{
+    display: inline-block;
+    padding: 0 20px;
+    transition: .2s ease-in-out 0s;
+} 
+.nav--links li a{
+    text-decoration: none;
+    color: var(--colorWhite);
+    font-size: 1.2rem;
+    font-weight: 300;
+    transition: .2s ease-in-out 0s; 
+}
+.nav--links li:last-child{
+background-color: var(--colorYellow); 
+padding:15px ;
+border-radius: 7px;
+} 
+.nav--links li a:hover{
+    color: var(--colorYellow); 
+    cursor: pointer;
+}
+.nav--links li:last-child:hover{
+   transform: scale(1.1);
+}
+.nav--links li:last-child a:hover{
+   color: var(--colorWhite);
+}
+
+@media only screen and (min-width: 1000px) {
+    .menu--container{
+         display: none;
+    }
+  }
+.toggle--btn{
+    color: var(--colorWhite);
+    font-size: 1.5rem;
+    cursor: pointer; 
+    display: none;
+} 
+.dropDown--menu{
+    position: absolute; 
+    display: none;
+    right: 1rem;
+    top: 70px;
+    width: 300px; 
+    height: 0;
+    background-color:var(--componentBackground);
+    border-radius: 10px; 
+    overflow: hidden; 
+    transition: height 0.3s ease-in-out;
+} 
+.dropDown--menu.open{
+    height: 187px; 
+}
+.dropDown--menu li{
+    padding: 0.7rem; 
+    list-style: none; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dropDown--menu li a{
+    text-decoration: none; 
+    color: var(--colorWhite);
+}
+.dropDown--menu li a:hover{
+    color: var(--colorYellow); 
+    cursor: pointer;
+ } 
+
+@media (max-width: 992px) {
+    .nav--links{
+        display: none;
+    } 
+    .toggle--btn{
+        display: block;
+    } 
+    .dropDown--menu{
+        display: block;
+    }
+}

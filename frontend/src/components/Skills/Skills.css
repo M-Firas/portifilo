@@ -1,0 +1,33 @@
+.skills{
+    padding:  50px;
+    background-color: rgb(0, 0, 0,.8);
+    border-radius: 64px;
+}
+.skills .pre--title , .title{
+    text-align: center;
+}
+
+.skill--list div{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+    color: aliceblue;
+    margin:0 20px;
+    
+}
+.skill--list div p{
+    font-size: 25px;
+    font-weight: 300;
+    
+}
+.skill--list{
+    padding: 50px 0px; 
+}
+
+@media only screen  and  (max-width:600px){
+    .skill--list div img{
+        width: 200px;
+        height: 200px;
+    }
+}

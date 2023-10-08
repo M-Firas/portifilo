@@ -1,0 +1,30 @@
+/*Font Family*/
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;700&display=swap');
+
+
+
+:root{
+   --bodyBackground:#191923;
+   --componentBackground:#2c2c37;
+   --componentPadding: 20px;
+   --colorYellow:#ffc107;
+   --colorWhite:#FFFFFF;
+   --colorGray:#8c8c8e;
+}
+
+*{
+  scroll-behavior: smooth;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bodyBackground);
+  font-family: 'League Spartan', sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
