@@ -17,11 +17,13 @@ export const Projects = () => {
             <img src={project.picture} alt="" />
             <h1>{project.name}</h1>
             <p>{project.discription}</p>
+            <a href={project.link} target="blank">
             <button>
-              <a href={project.link} target="blank">
+              
                 Go To Site!
-              </a>
+              
             </button>
+            </a>
           </div>
         ))}
       </div>
