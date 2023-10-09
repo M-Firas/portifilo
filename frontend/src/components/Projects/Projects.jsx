@@ -18,16 +18,11 @@ export const Projects = () => {
             <h1>{project.name}</h1>
             <p>{project.discription}</p>
             <a href={project.link} target="blank">
-            <button>
-              
-                Go To Site!
-              
-            </button>
+              <button>Go To Site!</button>
             </a>
           </div>
         ))}
       </div>
-      
     </div>
   );
 };
