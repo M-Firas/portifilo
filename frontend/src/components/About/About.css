@@ -27,6 +27,7 @@
 }
 .about--left img{
     width: 500px;
+    border-radius: 20px;
 }
 .about--right{
     flex-basis: 100%;

@@ -1,6 +1,6 @@
 import React from 'react'
 import './About.css'
-import aboutImg from '../../assets/aboutImg3.svg'
+import aboutImg from '../../assets/aboutImg31.svg'
 
 
 
